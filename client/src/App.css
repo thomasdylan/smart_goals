@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading {
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20%;
+}
+
+.nav-text {
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-text:hover {
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+
+.tab-div {
+  align-content: center;
+}
+
+.user-goals-container {
+  margin: 0 2em;
+}
+
+.goal-layout {
+  display: inline-block;
+  height: 10em;
+  width: 100%;
+}
+
+.full-goals {
+  display: inline-block;
+  margin: 0 .05rem;
+  max-width: 35%;
+}
+
+.goal-percentage {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.card-title {
+  margin-top: -20px;
+}
+
+.goal-delete-button {
+  height: 24px;
+  width: 24px;
+  padding: 0px !important;
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav-button {
+  float: right;
+}
+
+.login-button {
+  float: right !important;
+}
+
+.landing-page {
+  background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 125vh;
+}
+
+.landing-text-back {
+  background-color: rgba(220,220,200,0.5);
+  height: 125vh;
+  margin: 0 15%;
+  padding-top: 5px;
+  border-radius: 25px;
+  align-content: center;
+}
+
+.landing-text {
+  color: black;
+  margin: 0 5em;
+}
+
+.landing-image {
+  width: 50%;
+}
+
+.landing-button {
+  text-align: center;
+  align-content: center;
+}
