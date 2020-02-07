@@ -20,8 +20,13 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading {
@@ -98,7 +103,7 @@
 }
 
 .landing-text-back {
-  background-color: rgba(220,220,200,0.5);
+  background-color: rgba(220, 220, 200, 0.5);
   height: 125vh;
   margin: 0 15%;
   padding-top: 5px;
@@ -108,7 +113,7 @@
 
 .landing-text {
   color: black;
-  margin: 0 5em;
+  margin: 0 1em;
 }
 
 .landing-image {
