@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {CircularProgressbar, buildStyles} from 'react-circular-progressbar';
+import React, { useState, useEffect } from 'react';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import {useAuth0} from "../react-auth0-spa";
+import { useAuth0 } from "../react-auth0-spa";
 import {
     Card,
     CardTitle,
@@ -10,14 +10,14 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem, 
+    DropdownItem,
     Button
 } from 'reactstrap';
 import API from '../utils/API';
 import FormUpdate from '../components/FormUpdate';
 
 export default function FullGoalList() {
-    const {user} = useAuth0();
+    const { user } = useAuth0();
     const [userGoals, setUserGoals] = useState([]);
     const [goalUser] = useState(user.sub);
     const [isUpdating, setUpdating] = useState(false);
@@ -35,7 +35,7 @@ export default function FullGoalList() {
     const deleteGoal = (id) => {
         setUpdating(true);
         API.deleteGoal(id)
-           .then(res => console.log("deleted goal ", res));
+            .then(res => console.log("deleted goal ", res));
     }
 
     return (
@@ -55,29 +55,29 @@ export default function FullGoalList() {
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
-                            
+
                             <CircularProgressbar
                                 className="goal-percentage"
                                 circleRatio={0.75}
                                 value={((goal.amount / goal.goalAmount).toFixed(2)) * 100}
-                                text={`${ ((goal.amount / goal.goalAmount).toFixed(2)) * 100}%`}
+                                text={`${((goal.amount / goal.goalAmount).toFixed(2)) * 100}%`}
                                 styles={buildStyles({
-                                rotation: 1 / 2 + 1 / 8,
-                                strokeLinecap: "butt",
-                                trailColor: "#eee"
-                            })}/>
+                                    rotation: 1 / 2 + 1 / 8,
+                                    strokeLinecap: "butt",
+                                    trailColor: "#eee"
+                                })} />
                             <CardTitle>{goal.title}</CardTitle>
                             <CardText>${goal.amount} / ${goal.goalAmount}</CardText>
                             <UncontrolledDropdown setActiveFromChild>
-                                <DropdownToggle tag="a" className="nav-link"> 
+                                <DropdownToggle tag="a" className="nav-link">
                                     <Button color="success">Update</Button>
                                 </DropdownToggle>
                                 <DropdownMenu>
                                     <DropdownItem header>
-                                        <FormUpdate goalKey={goal._id} 
-                                                    updating={setUpdating} 
-                                                    goalAmount={goal.goalAmount}
-                                                    />
+                                        <FormUpdate goalKey={goal._id}
+                                            updating={setUpdating}
+                                            goalAmount={goal.goalAmount}
+                                        />
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
