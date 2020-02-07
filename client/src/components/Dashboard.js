@@ -14,7 +14,7 @@ export default function Dashboard() {
                 <Col sm='3'>
                     <AdSense.Google
                         client='ca-pub-1423704383315423'
-                        slot='8434602954'
+                        slot='9575916933'
                     />
                 </Col>
                 
