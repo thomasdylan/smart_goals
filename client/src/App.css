@@ -97,12 +97,12 @@
 
 .landing-page {
   background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 100vh;
+  height: 125vh;
 }
 
 .landing-text-back {
   background-color: rgba(220, 220, 200, 0.5);
-  height: 100vh;
+  height: 125vh;
   margin: 0 15%;
   padding-top: 5px;
   border-radius: 25px;
