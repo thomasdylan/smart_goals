@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import LandingCarousel from '../components/Carousel';
 import {useAuth0} from "../react-auth0-spa";
 
 export default function Landing() {
@@ -7,6 +8,7 @@ export default function Landing() {
 
     return (
         <div className="landing-page">
+            <LandingCarousel />
             <div className="landing-text-back">
                 <h1 className="landing-text">Smart Goals</h1>
                 <br/>

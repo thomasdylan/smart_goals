@@ -23,13 +23,14 @@ const NavBar = () => {
         <div>
             <Navbar className="full-nav-bar" color="light" light expand="md">
                 <NavbarBrand> 
-                    <Link to="/home" className="nav-text">Smart Goals</Link>&nbsp;
+                    <Link to="/home" className="nav-text"><img className="brand-image" src="https://s3.amazonaws.com/designmantic-logos/logos/2020/Feb/small-8882-5e35ab1e710a9.png" alt="smart goals" /></Link>&nbsp;
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>                          
                     {isAuthenticated && (
                         <Nav className="mr-auto" navbar>
                             <NavItem>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <Link to="/home" className="nav-text">Home</Link>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </NavItem> 
