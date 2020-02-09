@@ -16,8 +16,8 @@ import FullGoalList from './FullGoalList';
 import Dashboard from './Dashboard';
 
 const Tabs = (props) => {
-    const [activeTab,
-        setActiveTab] = useState('1');
+    const [activeTab, setActiveTab] = useState('1');
+    const [activeRefresh, setActiveRefresh] = useState(false);
 
     const toggle = tab => {
         if (activeTab !== tab) 
@@ -47,6 +47,7 @@ const Tabs = (props) => {
                     })}
                         onClick={() => {
                         toggle('2');
+                        setActiveRefresh(true);
                     }}>
                         Goals
                     </NavLink>
@@ -63,7 +64,7 @@ const Tabs = (props) => {
                 <TabPane tabId="2">
                     <Row>
                         <Col sm="12">
-                            <FullGoalList />
+                            <FullGoalList activeRefresh={activeRefresh} setActiveRefresh={setActiveRefresh}/>
                         </Col>
                     </Row>
                 </TabPane>

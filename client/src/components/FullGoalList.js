@@ -16,7 +16,7 @@ import {
 import API from '../utils/API';
 import FormUpdate from '../components/FormUpdate';
 
-export default function FullGoalList() {
+export default function FullGoalList(props) {
     const { user } = useAuth0();
     const [userGoals, setUserGoals] = useState([]);
     const [goalUser] = useState(user.sub);
@@ -29,8 +29,9 @@ export default function FullGoalList() {
             .then(res => {
                 setUserGoals(res.data);
             });
+        props.setActiveRefresh(false);
         console.log("is updating: ", isUpdating)
-    }, [isUpdating]);
+    }, [isUpdating, props.activeRefresh]);
 
     const deleteGoal = (id) => {
         setUpdating(true);

@@ -37,7 +37,7 @@
 }
 
 .full-nav-bar {
-  background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-075-clean-mirror.png") !important;
+  background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-165-morning-salad.png") !important;
   background-size: 100%;
 }
 
@@ -101,22 +101,14 @@
 }
 
 .landing-page {
-  background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 100vh;
-}
-
-.landing-text-back {
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100vh;
-  margin: 0 15%;
-  padding-top: 5px;
-  border-radius: 25px;
-  align-content: center;
+  background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-096-healthy-water.png");
+  background-size: 100%;
 }
 
 .landing-text {
   color: black;
   margin: 0 1em;
+  font-size: 1.1em;
 }
 
 .landing-image {
@@ -142,4 +134,12 @@
 
 .brand-image {
   max-height: 40px;
+}
+
+.carousel-images {
+  max-height: 500px;
+}
+
+.carousel-text {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
