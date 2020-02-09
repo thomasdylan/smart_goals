@@ -12,10 +12,7 @@ export default function Dashboard() {
         <div className= "container">
             <Row>
                 <Col sm='3'>
-                    <AdSense.Google
-                        client='ca-pub-1423704383315423'
-                        slot='9575916933'
-                    />
+                    {/* Social Feed */}
                 </Col>
                 
                 <Col sm='6'>

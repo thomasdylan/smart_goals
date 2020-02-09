@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useAuth0 } from "../react-auth0-spa";
 
 const Profile = () => {
@@ -13,12 +13,12 @@ const Profile = () => {
     }
 
     return (
-        <Fragment>
+        <div className="profile-page">
             <img src={user.picture} alt="Profile" />
             <h2>{user.name}</h2>
             <p>{user.email}</p>
             <p>{user.id}</p>
-        </Fragment>
+        </div>
     );
 };
 
