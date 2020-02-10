@@ -3,6 +3,7 @@ import { useAuth0 } from "../react-auth0-spa";
 import { Row, Col, Button } from 'reactstrap';
 import GoalList from './GoalList';
 import GoalForm from './GoalForm';
+import SocialList from './SocialList';
 import AdSense from 'react-adsense';
 
 export default function Dashboard() {
@@ -13,6 +14,9 @@ export default function Dashboard() {
             <Row>
                 <Col sm='3'>
                     {/* Social Feed */}
+                    <h3>Social Board</h3>
+                    <hr />
+                    {/* <SocialList newGoalAdded={setNewGoal}/> */}
                 </Col>
                 
                 <Col sm='6'>
