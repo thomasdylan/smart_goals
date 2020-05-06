@@ -1,29 +1,20 @@
-# Create React Express App
+# Smart Goals
 
-## About This Boilerplate
+## Overview
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+Wheter you're planning your next trip or your retirement Smart Goals makes it easy to keep track of these goals.  
+Smart Goals allows users to track their financial goals without giving away personal financial information.  
+Simply add what you are saving for, the amount you want to save and how much you currently have towards it.  
+Smart Goals allows users to easily update their goals and view their progress.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Live Site
 
-## Starting the app locally
+https://shrouded-anchorage-74070.herokuapp.com/
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+### Test Login
 
-```
-npm install
-```
+We have provided a login for users to test without having to sign up themselves.  
 
-This should install node modules within the server and the client folder.
+Email: example@example.com  
+Password: Smart_Guest1  
 
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
